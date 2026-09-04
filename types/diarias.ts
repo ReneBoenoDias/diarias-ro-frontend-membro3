@@ -29,10 +29,14 @@ export interface RequisicaoCalculoDiaria {
   categoriaAutoridadeAcompanhada: CategoriaCargo | null;
 }
 
-export interface RespostaCalculoDiaria {
+export interface ResultadoCalculo {
   elegivel: boolean;
   motivoIneligibilidade: string;
+
   totalDias: number;
-  valorUnitarioBaseBrl: number;
-  valorTotalBrl: number;
+
+  valorUnitario: number;
+  valorBruto: number;
+  desconto: number;
+  valorTotal: number;
 }
